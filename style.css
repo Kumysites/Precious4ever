@@ -20,8 +20,8 @@ h2 {
 .words-box {
   margin: 30px auto;
   padding: 20px;
-  background: rgba(255, 182, 193, 0.9); /* Rose clair avec une légère transparence */
-  border: 2px solid #e75480;
+  background: #fff; /* Fond blanc pour plus de visibilité */
+  border: 3px solid #e75480;
   border-radius: 15px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   width: 80%; /* Taille relative à l'écran */
@@ -30,7 +30,7 @@ h2 {
 }
 
 .words-box h3 {
-  font-size: 2em;
+  font-size: 1.8em;
   color: #d81b60;
   margin: 0 0 15px 0;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
@@ -51,10 +51,22 @@ iframe {
   border-radius: 15px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   
-  /* Responsiveness */
+  /* Aspect ratio pour mode portrait */
   width: 90%;
   max-width: 400px;
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 9 / 16;
+}
+
+/* Pied de page */
+footer {
+  margin-top: 30px;
+  padding: 10px 0;
+  background: rgba(255, 105, 180, 0.1); /* Rose pâle */
+  color: #e75480;
+  font-size: 1.2em;
+  text-align: center;
+  border-top: 2px solid #e75480;
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Responsivité */
