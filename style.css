@@ -8,12 +8,23 @@ body {
   text-align: center;
 }
 
-/* Titre */
+/* Titre principal */
 h2 {
   font-size: 2.5em;
   color: #e75480;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
   margin: 20px 0;
+}
+
+/* Sous-titres */
+h3 {
+  font-size: 2em;
+  color: #d81b60;
+  margin-top: 30px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+  border-bottom: 2px solid #e75480;
+  display: inline-block;
+  padding-bottom: 5px;
 }
 
 /* Paragraphes */
@@ -24,21 +35,21 @@ p {
   margin: 10px 20px;
 }
 
-/* Iframe */
+/* Vidéo iframe */
 iframe {
   display: block;
   margin: 20px auto;
   border: 5px solid #ff69b4;
   border-radius: 15px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-
-  /* Adapte à l'écran pour une vidéo portrait */
-  width: 90%; /* Largeur relative à l'écran */
-  max-width: 400px; /* Limite la largeur sur les grands écrans */
-  aspect-ratio: 9 / 16; /* Ratio pour une vidéo portrait */
+  
+  /* Responsiveness */
+  width: 90%;
+  max-width: 400px;
+  aspect-ratio: 16 / 9;
 }
 
-/* Boutons ou autres éléments */
+/* Boutons ou liens */
 button, a {
   display: inline-block;
   padding: 10px 20px;
@@ -63,19 +74,25 @@ button:hover, a:hover {
   h2 {
     font-size: 2em;
   }
+
+  h3 {
+    font-size: 1.5em;
+  }
+
   p {
     font-size: 1em;
   }
+
   iframe {
-    width: 90%; /* Prend presque tout l'écran sur mobile */
-    max-width: none; /* Supprime la limite sur les petits écrans */
-    height: auto; /* S'ajuste automatiquement à la hauteur */
+    width: 90%;
+    max-width: none;
+    height: auto;
   }
 }
 
 @media screen and (min-width: 769px) {
   iframe {
-    width: 400px; /* Taille fixe pour les écrans plus grands */
+    width: 400px;
     height: auto;
   }
 }
