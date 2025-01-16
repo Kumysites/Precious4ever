@@ -15,6 +15,50 @@ h2 {
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
   margin: 20px 0;
 }
+/* Animation romantique pour h3 */
+h3 {
+  font-size: 2em; /* Taille du texte */
+  color: #d81b60; /* Rose foncé pour le texte */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Ombre douce */
+  margin: 20px 0;
+  padding: 10px 0;
+  border-bottom: 3px solid #ff69b4; /* Ligne rose sous le texte */
+  display: inline-block; /* Ajuste la largeur au texte */
+  background: linear-gradient(90deg, #ffe4e1, #fff); /* Dégradé léger derrière le texte */
+  border-radius: 10px; /* Coins arrondis */
+  padding-left: 15px; /* Espacement interne à gauche */
+  padding-right: 15px; /* Espacement interne à droite */
+  box-shadow: 0 4px 10px rgba(231, 84, 128, 0.2); /* Ombre subtile autour */
+  
+  /* Animation */
+  animation: slideIn 1.5s ease-out, glow 3s infinite alternate ease-in-out;
+}
+
+/* Animation d'apparition (glissement vers le haut) */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(50px); /* Commence plus bas */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* Position finale */
+  }
+}
+
+/* Animation de scintillement (glow) */
+@keyframes glow {
+  from {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2),
+                 0 0 10px rgba(231, 84, 128, 0.3),
+                 0 0 20px rgba(231, 84, 128, 0.5);
+  }
+  to {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2),
+                 0 0 15px rgba(231, 84, 128, 0.5),
+                 0 0 30px rgba(231, 84, 128, 0.7);
+  }
+}
 
 /* Boîte pour les mots (visible et accentuée) */
 .words-box {
